@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Screen Size Checker</title>
+</head>
+
+<body>
+  <p>
+    screen.width<br><span id="screen-width"></span>
+  </p>
+  <p>
+    screen.height<br><span id="screen-height"></span>
+  </p>
+  <p>
+    screen.availWidth<br><span id="screen-availWidth"></span>
+  </p>
+  <p>
+    screen.availHeight<br><span id="screen-availHeight"></span>
+  </p>
+  <p>
+    window.innerWidth<br><span id="window-innerWidth"></span>
+  </p>
+  <p>
+    window.innerHeight<br><span id="window-innerHeight"></span>
+  </p>
+  <p>
+    window.outerWidth<br><span id="window-outerWidth"></span>
+  </p>
+  <p>
+    window.outerHeight<br><span id="window-outerHeight"></span>
+  </p>
+  <p>
+    document.documentElement.clientWidth<br><span id="document-documentElement-clientWidth"></span>
+  </p>
+  <p>
+    document.documentElement.clientHeight<br><span id="document-documentElement-clientHeight"></span>
+  </p>
+  <p>
+    $(window).width()<br><span id="jq-window-width"></span>
+  </p>
+  <p>
+    $(window).height()<br><span id="jq-window-height"></span>
+  </p>
+  <p>
+    $(document).width()<br><span id="jq-document-width"></span>
+  </p>
+  <p>
+    $(document).height()<br><span id="jq-document-height"></span>
+  </p>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    function calc() {
+      $('#screen-width').text(screen.width);
+      $('#screen-height').text(screen.height);
+      $('#screen-availWidth').text(screen.availWidth);
+      $('#screen-availHeight').text(screen.availHeight);
+      $('#screen-availHeight').text(screen.availHeight);
+      $('#window-innerWidth').text(window.innerWidth);
+      $('#window-innerHeight').text(window.innerHeight);
+      $('#window-outerWidth').text(window.outerWidth);
+      $('#window-outerHeight').text(window.outerHeight);
+      $('#document-documentElement-clientWidth').text(document.documentElement.clientWidth);
+      $('#document-documentElement-clientHeight').text(document.documentElement.clientHeight);
+      $('#jq-window-width').text($(window).width());
+      $('#jq-window-height').text($(window).height());
+      $('#jq-document-width').text($(document).width());
+      $('#jq-document-height').text($(document).height());
+    }
+    setInterval(calc, 100);
+    calc();
+  </script>
+</body>
+
+</html>
