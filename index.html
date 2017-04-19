@@ -4,51 +4,181 @@
 <head>
   <meta charset="utf-8">
   <title>Screen Size Checker</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.10/semantic.min.css">
 </head>
 
 <body>
-  <p>
-    screen.width<br><span id="screen-width"></span>
-  </p>
-  <p>
-    screen.height<br><span id="screen-height"></span>
-  </p>
-  <p>
-    screen.availWidth<br><span id="screen-availWidth"></span>
-  </p>
-  <p>
-    screen.availHeight<br><span id="screen-availHeight"></span>
-  </p>
-  <p>
-    window.innerWidth<br><span id="window-innerWidth"></span>
-  </p>
-  <p>
-    window.innerHeight<br><span id="window-innerHeight"></span>
-  </p>
-  <p>
-    window.outerWidth<br><span id="window-outerWidth"></span>
-  </p>
-  <p>
-    window.outerHeight<br><span id="window-outerHeight"></span>
-  </p>
-  <p>
-    document.documentElement.clientWidth<br><span id="document-documentElement-clientWidth"></span>
-  </p>
-  <p>
-    document.documentElement.clientHeight<br><span id="document-documentElement-clientHeight"></span>
-  </p>
-  <p>
-    $(window).width()<br><span id="jq-window-width"></span>
-  </p>
-  <p>
-    $(window).height()<br><span id="jq-window-height"></span>
-  </p>
-  <p>
-    $(document).width()<br><span id="jq-document-width"></span>
-  </p>
-  <p>
-    $(document).height()<br><span id="jq-document-height"></span>
-  </p>
+  <div class="ui container">
+    <h1 class="ui header">Screen Size Checker</h1>
+    <table class="ui unstackable table">
+      <thead>
+        <tr>
+          <th>Prop</th>
+          <th>W</th>
+          <th>H</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>screen.<i>x</i></td>
+          <td id="screen-width"></td>
+          <td id="screen-height"></td>
+        </tr>
+        <tr>
+          <td>screen.avail<i>X</i></td>
+          <td id="screen-availWidth"></td>
+          <td id="screen-availHeight"></td>
+        </tr>
+        <tr>
+          <td>window.inner<i>X</i></td>
+          <td id="window-innerWidth"></td>
+          <td id="window-innerHeight"></td>
+        </tr>
+        <tr>
+          <td>window.outer<i>X</i></td>
+          <td id="window-outerWidth"></td>
+          <td id="window-outerHeight"></td>
+        </tr>
+        <tr>
+          <td>document.documentElement.client<i>X</i></td>
+          <td id="document-documentElement-clientWidth"></td>
+          <td id="document-documentElement-clientHeight"></td>
+        </tr>
+        <tr>
+          <td>$(window).<i>X</i>()</td>
+          <td id="jq-window-width"></td>
+          <td id="jq-window-height"></td>
+        </tr>
+        <tr>
+          <td>$(document).<i>X</i>()</td>
+          <td id="jq-document-width"></td>
+          <td id="jq-document-height"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h2 class="ui header">Dummy Form</h2>
+    <form class="ui form">
+      <div class="field">
+        <label>type="text"</label>
+        <input type="text">
+      </div>
+      <div class="field">
+        <label>type="date"</label>
+        <input type="date">
+      </div>
+    </form>
+    <h2 class="ui header">For Scroll</h2>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+    <p>a</p>
+  </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script>
     function calc() {
